@@ -11,7 +11,8 @@ class Child(Parent):  # Parent sınıfı Child sınıfı tarafından kalıtılı
     def __init__(self, name):
         print("Child constructor", name, sep=" - ")
         Parent.__init__(self, name)
+        #super().__init__(name) # bir üstteki satır yerine bu satır da kullanılabilir.
 
 
 c = Child("Mertt")
-c.writeName()
+c.write_name()
